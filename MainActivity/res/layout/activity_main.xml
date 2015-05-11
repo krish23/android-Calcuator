@@ -1,0 +1,334 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/txt_display"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:gravity="right"
+        android:text="@string/zero" >
+
+        <requestFocus />
+    </EditText>
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/buttons4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0px" >
+        
+         <Button
+            android:id="@+id/btn_mc"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="0px"
+            android:text="@string/mc"
+            android:tag="mc"
+            android:onClick="_getInputKeys" /> 
+            
+            <Button
+            android:id="@+id/btn_mr"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:text="@string/mr"
+            android:tag="mr"
+            android:onClick="_getInputKeys" /> 
+            
+            <Button
+            android:id="@+id/btn_mplus"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:text="@string/mplus"
+            android:tag="mplus"
+            android:onClick="_getInputKeys" /> 
+            
+            <Button
+                android:id="@+id/btn_mminus"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="0px"
+                android:text="@string/mminus"
+                android:tag="mminus"
+                android:onClick="_getInputKeys" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/buttons4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0px" >
+        
+         <Button
+            android:id="@+id/btn_seven"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="0px"
+            android:text="@string/seven"
+            android:tag="7"
+            android:onClick="_getInputKeys" /> 
+            
+            <Button
+            android:id="@+id/btn_eight"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:text="@string/eight"
+            android:tag="8"
+            android:onClick="_getInputKeys" /> 
+            
+            <Button
+            android:id="@+id/btn_nine"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:text="@string/nine"
+            android:tag="9"
+            android:onClick="_getInputKeys" /> 
+            
+            <Button
+                android:id="@+id/btn_delete"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="0px"
+                android:text="@string/delete"
+                android:tag="del"
+                android:onClick="_getInputKeys" /> 
+            
+            <Button
+                android:id="@+id/btn_clear"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="0px"
+                android:text="@string/clear"
+                android:tag="clear"
+                android:onClick="_getInputKeys" /> 
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/buttons3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0px" >
+        
+        <Button
+            android:id="@+id/btn_four"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="0px"
+            android:text="@string/four"
+        	android:tag="4"
+            android:onClick="_getInputKeys" /> 
+            
+            <Button
+            android:id="@+id/btn_five"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:text="@string/five"
+            android:tag="5"
+            android:onClick="_getInputKeys" /> 
+            
+            <Button
+            android:id="@+id/btn_six"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:text="@string/six" 
+            android:tag="6"
+            android:onClick="_getInputKeys" /> 
+            
+            <Button
+            android:id="@+id/btn_div"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:text="@string/div"
+            android:tag="/"
+            android:onClick="_getInputKeys" /> 
+            
+            <Button
+                android:id="@+id/btn_neg"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="0px"
+                android:text="@string/neg"
+           		android:tag="neg"
+            	android:onClick="_getInputKeys" /> 
+            
+    </LinearLayout> 
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/buttons2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0px" >
+        
+            <Button
+            android:id="@+id/btn_one"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="0px"
+            android:text="@string/one"
+            android:tag="1"
+            android:onClick="_getInputKeys" />
+            
+            <Button
+            android:id="@+id/btn_two"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:text="@string/two"
+            android:tag="2"
+            android:onClick="_getInputKeys" />
+            
+            <Button
+            android:id="@+id/btn_three"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:text="@string/three"
+            android:tag="3"
+            android:onClick="_getInputKeys" />
+            
+            <Button
+            android:id="@+id/btn_sub"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:tag="-"
+            android:text="@string/sub"
+            android:onClick="_getInputKeys" />
+            
+            <Button
+                android:id="@+id/btn_mul"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="0px"
+                android:tag="*"
+                android:text="@string/mul"
+                android:onClick="_getInputKeys" />
+            
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0px"
+        android:gravity="top" >
+
+        <Button
+            android:id="@+id/btn_zero"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="175px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="0px"
+            android:text="@string/zero" 
+            android:tag="0"
+            android:onClick="_getInputKeys"/>
+        
+        <Button
+            android:id="@+id/btn_dec"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:text="@string/dec"
+       		android:tag="."
+            android:onClick="_getInputKeys" /> 
+        
+        <Button
+            android:id="@+id/btn_add"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:tag="+"
+            android:text="@string/add"
+            android:onClick="_getInputKeys" /> 
+        
+        <Button
+            android:id="@+id/btn_equal"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="0px"
+            android:tag="="
+            android:text="@string/equal" 
+            android:onClick="_getInputKeys" />        
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txt_mem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+           
+</LinearLayout>
+
