@@ -1,3 +1,6 @@
+Android Calculator with decent features
+
+
 Instruction
 ----------
 Enter the numbers and operator and press the answer button, will pop the answer. If you would like you can do the calculation from the answer.
@@ -20,3 +23,5 @@ Target : Android 4.1.2 - API Level 16
 CPU/ABI : Intel Atom (x86)
 RAM : 512
 skin/resolution : 480x800
+
+Krishanthan Krishnamoorthy
